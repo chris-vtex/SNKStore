@@ -1,0 +1,191 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text#1",
+      "slider-layout#Banner",
+      
+      "flex-layout.row#categorias",
+      "info-card#Promo",
+      "list-context.product-list#demo1"
+    ]
+  },
+  "slider-layout#Banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-banners"
+    },
+    "children": ["info-card#Banner1","info-card#Banner3"]
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "SNK Store",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "font":"t-heading-2"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Test2"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "MAS VENDIDOS",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "font":"t-heading-2"
+    }
+  },
+  "info-card#Banner1": {
+    "props": {
+      "id": "info-card-Banner1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://christianescobar.vtexassets.com/arquivos/ids/156408",
+      "headline": "Descubre nuestro catalogo",
+      "callToActionText": "Vamos",
+      "callToActionUrl": "/products",
+      "blockClass": "info-card-bannerCatalogo",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#Banner2": {
+    "props": {
+      "id": "info-card-Banner2",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://wallpaperforu.com/wp-content/uploads/2020/07/sneaker-wallpaper-20070518265868-scaled.jpg",
+      "headline": "Nike x Jordan",
+      "callToActionText": "Comprar",
+      "callToActionUrl": "/products",
+      "blockClass": "info-card-full",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#Banner3": {
+    "props": {
+      "id": "info-card-Banner1",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "https://christianescobar.vtexassets.com/arquivos/ids/156409",
+      "headline": "STAR WARS x Adidas",
+      "callToActionText": "Conocelas",
+      "callToActionUrl": "/products",
+      "blockClass": "info-card-bannerCatalogo",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#Promo":{
+    "props":{
+      "htmlId":"info-card-Promo",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "SUSCRÍBETE, ENTÉRATE DE LAS NOVEDADES Y OBTÉN 15% DE DESCUENTO",
+      "callToActionText": "Suscribirse",
+      "callToActionUrl": "/products",
+      "blockClass": "info-card-Promo",
+      "textAlignment": "center"
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#demo1"],
+    "children": [
+      "rich-text#3",
+      "slider-layout#demo-products"],
+    "props":{
+      "orderBy":"OrderByTopSaleDESC"
+    }
+  },
+  "product-summary.shelf#demo1": {
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-sku-selector",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "slider-layout#demo-products":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "product-summary-sku-selector":{
+    "props":{
+      "showVariationsLabels": ["itemValue"]
+    }
+  },
+  "flex-layout.row#categorias":{
+    "props":{
+      "fullWidth":true,
+      "colGap":5,
+      "marginTop":6,
+      "horizontalAlign":"center"
+    },
+    "children":[
+      "flex-layout.col#Categoria1",
+      "flex-layout.col#Categoria2"
+    ]
+  },
+  "flex-layout.col#Categoria1":{
+    "children":[
+      "info-card#category1"
+    ]
+  },
+  "flex-layout.col#Categoria2":{
+    "children":[
+      "info-card#category2"
+    ]
+  },
+  "flex-layout.col#Categoria3":{
+    "children":[
+      "info-card#category1"
+    ]
+  },
+  "info-card#category1":{
+    "props": {
+      "id": "info-card-category1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://christianescobar.vtexassets.com/arquivos/ids/156406",
+      "headline": "Mujer",
+      "callToActionText": "Vamos",
+      "callToActionUrl": "/products",
+      "blockClass": "info-card-category",
+      "textAlignment": "center",
+      "callToActionMode":"Link"
+    }
+  },
+  "info-card#category2":{
+    "props": {
+      "id": "info-card-category1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://christianescobar.vtexassets.com/arquivos/ids/156407",
+      "headline": "Hombre",
+      "callToActionText": "Vamos",
+      "callToActionUrl": "/products",
+      "blockClass": "info-card-category",
+      "textAlignment": "center",
+      "callToActionMode":"Link"
+    }
+  }
+
+}

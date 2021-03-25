@@ -1,0 +1,68 @@
+.infoCardContainer--info-card-full{
+    width: 100%;
+    height: 100%;
+    background-blend-mode: overlay;
+    background-position-y: bottom;
+    background-color: #0000008a;
+}
+.infoCardHeadline--info-card-full{
+    color: white;
+}
+.searchBarContainer{
+    align-self: center;
+}
+.infoCardContainer--info-card-Promo{
+    background-color: #ede734;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.infoCardHeadline--info-card-Promo{
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.infoCardContainer--info-card-category{
+    height: 500px;
+    background-position: top;
+}
+.infoCardHeadline--info-card-category{
+    color: white
+;}
+
+.infoCardTextContainer--info-card-category{
+    width: 100%;
+    background-color: #f71f6700;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    position: relative;
+    transition: all ease 0.2s;
+}
+.infoCardTextContainer--info-card-category:hover{
+    background-color: #f71f6758;
+}
+.infoCardCallActionContainer--info-card-category{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.infoCardContainer--info-card-bannerCatalogo{
+    width: 100%;
+    height: 500px;
+}
+.infoCardHeadline--info-card-bannerCatalogo{
+    color: white;
+}
